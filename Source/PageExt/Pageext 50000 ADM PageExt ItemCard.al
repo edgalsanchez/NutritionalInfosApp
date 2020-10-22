@@ -7,7 +7,7 @@ pageextension 50000 "ADM PageExt50000" extends "Item Card"
         {
             group(NutritionalInfos)
             {
-                Caption = 'Nutritional Infos';
+                Caption = 'Nutritional Info';
                 field("total calories"; "total calories")
                 {
                     ApplicationArea = All;

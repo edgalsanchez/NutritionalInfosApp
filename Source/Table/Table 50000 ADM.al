@@ -1,6 +1,6 @@
 table 50000 "ADM Nutritional Information"
 {
-    DataClassification = ToBeClassified;
+    DataClassification = CustomerContent;
     Caption = 'Nutritional Informations';
 
     fields
