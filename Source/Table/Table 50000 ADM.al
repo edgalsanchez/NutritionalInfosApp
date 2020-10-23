@@ -44,9 +44,11 @@ table 50000 "ADM Nutritional Information"
         field(50; "Amount"; Decimal)
         {
             Caption = 'Amount';
+
         }
 
     }
+
 
     keys
     {
@@ -55,6 +57,37 @@ table 50000 "ADM Nutritional Information"
             Clustered = true;
         }
     }
+
+
+    // trigger OnInsert()
+    // var
+    //     maxAmount: Integer;
+    //     ADM: Record "ADM Nutritional Information";
+    // begin
+    //     maxAmount := 0;
+    //     ADM.SetRange("Item No.", Rec."Item No.");
+    //     if ADM.CalcSums(Amount) then
+    //         maxAmount := Rec.Amount + ADM.Amount;
+    //     if maxAmount >= 2000 then
+    //         Error('Te sum of the calories');
+
+
+    // end;
+
+    // trigger OnModify()
+    // var
+    //     maxAmount: Integer;
+    //     ADM: Record "ADM Nutritional Information";
+    // begin
+    //     maxAmount := 0;
+    //     ADM.SetRange("Item No.", Rec."Item No.");
+    //     if ADM.CalcSums(Amount) then
+    //         maxAmount := Rec.Amount + ADM.Amount;
+    //     if maxAmount >= 2000 then
+    //         Error('Te sum of the calories');
+
+
+    // end;
 
 
 }
